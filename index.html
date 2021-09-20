@@ -4,24 +4,36 @@ Github Username
 Radio buttons with the following options: Enterprise, Pro, Free
 A checkbox with the words "Remember Me" next to it. -->
 <form>
-    <label>Email:
-        <input type="email">
-    </label>
+    <fieldset>
+        <label>Email:
+            <input type="email">
+        </label>
+        <br><br>
+        <label>Password:
+            <input type ="password">
+        </label>
+        <br><br>
+        <label>Github Username:
+            <input type="text">
+        </label>
+    </fieldset>
     <br><br>
-    <label>Password:
-        <input type ="password">
-    </label>
+
+    <fieldset>
+        <legend>What version are you using?</legend>
+        <input id="version-enterprise" type="radio" name="version" value="Enterprise">
+        <label for="version-enterprise">Enterprise</label><br>
+        <input id="version-pro" type="radio" name="version" value="Pro">
+        <label for="version-pro">Pro</label><br>
+        <input id="version-free" type="radio" name="version" value="Free">
+        <label for="version-free">Free</label><br>
+    </fieldset>
     <br><br>
-    <label>Github Username:
-        <input type="text">
+
+    <fieldset>
+        <legend>To do</legend>
+        <input type="checkbox" name="todo1" value="Remember Me">
     </label>
-    <br><br>
-    <legend>What version are you using?</legend>
-        <input type="radio" name="version" value="Enterprise">
-        <input type="radio" name="version" value="Pro">
-        <input type="radio" name="version" value="Free">
-    <br><br>
-    <legend>To do</legend>
-        <input type="checkbox" name="todo" value="Remember Me">
-    </label>
+    </fieldset>
+
 </form>
